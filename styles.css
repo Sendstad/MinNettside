@@ -6,15 +6,25 @@ header {
 
 /* Stil for hovedinnholdet */
 main {
-    text-align: center;
+    text-align: center; /* Justerer hovedinnholdet til midten horisontalt */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Justerer innholdet til midten vertikalt */
     height: 100%;
+    justify-content: center; /* Justerer hovedinnholdet til midten vertikalt */
     margin-top: 10px; /* Legg til plass på oversiden */
-    margin-left: 335px; /* Legg til plass på venstre side */
+    margin-left: auto; /* Plasserer hovedinnholdet i midten horisontalt */
+    margin-right: auto; /* Plasserer hovedinnholdet i midten horisontalt */
 }
+
+/* Stil for venstrestilt tekst */
+main h2,
+main p {
+    text-align: left; /* Venstrestilt tekst inni hovedinnholdet */
+}
+
+
 
 /* Stil for navigasjonsmenyen */
 nav ul {
@@ -27,6 +37,22 @@ nav ul {
 
 nav li {
     margin: 0 15px;
+}
+
+/* Stil for knapper i navigasjonsmenyen */
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3;
 }
 
 /* Stil for bunnteksten */
