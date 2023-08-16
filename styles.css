@@ -61,7 +61,7 @@ nav li {
 nav a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #5a9362; /* Endre fargen */
+    background-color: #e73cbf; /* Endre fargen */
     color: white;
     text-decoration: none;
     border-radius: 20px; /* Gjør hjørnene mer avrundede */
@@ -71,7 +71,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2b6232; /* Endre farge på hover */
+    background-color: #8a1d71; /* Endre farge på hover */
     transform: translateY(-2px); /* Litt heving ved hover */
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Endre skyggen ved hover */
 }
@@ -82,4 +82,20 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: auto; /* Legg til plass på oversiden */
+}
+
+/* Stil for hjerte-container */
+.heart-container {
+    position: fixed;
+    pointer-events: none; /* Forhindrer at hjertet blokkerer klikk */
+}
+
+/* Stil for hjerte */
+.heart {
+    font-size: 24px;
+    color: #e73cbf;
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.2s ease;
 }
