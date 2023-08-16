@@ -1,8 +1,26 @@
+/* Stil for header */
 header {
     text-align: center;
-    padding: 10px;
-    margin-top: 20px; /* Legg til plass på oversiden */
+    padding: 50px 0;
+    background-color: none;
 }
+
+/* Stil for header-tekst */
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Legg til en skyggeeffekt */
+}
+
+header p {
+    font-size: 18px;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /* Stil for hovedinnholdet */
 main {
@@ -43,17 +61,21 @@ nav li {
 nav a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #5a9362; /* Endre fargen */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 20px; /* Gjør hjørnene mer avrundede */
+    border: none; /* Fjern kanten */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en subtil skygge */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    background-color: #2b6232; /* Endre farge på hover */
+    transform: translateY(-2px); /* Litt heving ved hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Endre skyggen ved hover */
 }
+
 
 /* Stil for bunnteksten */
 footer {
